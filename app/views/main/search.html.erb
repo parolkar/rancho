@@ -1,0 +1,12 @@
+  You searched for <b><%= params[:q] %></b>.
+
+  <div><%= "time taken - #{@time_taken}" unless @results.nil?%></div>
+  <div id='results'>
+    <ol>
+      <% @results.each do |result| %>
+      <% page = Page.find(result[0]) %>
+      <li><%= link_to page.title, page.url %><br>
+        <%= page.url %>  (score : <%= "%4.3f" % result[1]%>)</li>
+      <% end unless @results.nil? %>
+    </ol>
+  </div>

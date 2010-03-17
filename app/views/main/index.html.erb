@@ -1,0 +1,10 @@
+<center style="margin-top: 150px">
+  <% form_tag search_path, :method => :get do %>
+<%= text_field_tag :q %>
+<%= submit_tag :search, :name => nil %>
+<% end %>
+
+<p>
+  There are <%= @indexed_pages %> pages in the index.
+</p>
+</center>

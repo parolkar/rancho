@@ -1,0 +1,18 @@
+Rancho
+======
+
+A true Location-based full-text search toolkit
+* Rails plugin (> 2.3+)
+* Ranking Algorithms : Geo-distance , Word-distance, Word-Frequency   
+* Realtime indexing (No need of background daemons for updating indexes)
+                                                                       
+Install
+======= 
+
+$ cd your_project_dir
+$ git clone git://github.com/parolkar/rancho.git vendor/plugins/rancho
+$ rake rancho:setup
+
+
+
+Copyright (c) 2010 Abhishek Parolkar, released under the MIT license
