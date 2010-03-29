@@ -11,7 +11,7 @@ class CreateRanchoIndex < ActiveRecord::Migration
     end
     add_index :rancho_indices, :rancho_content_pointer_id
     add_index :rancho_indices, :rancho_word_id
-    add_index :rancho_indices, [:rancho_word_id, :rancho_content_pointer_id]
+    add_index :rancho_indices, [:rancho_word_id, :rancho_content_pointer_id] ,:name => 'rw_rcp'
   end
 
   def self.down
