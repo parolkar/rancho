@@ -14,3 +14,4 @@ end
 String.send(:include, RanchoString)
 
 require File.dirname(__FILE__) +  "/lib/indexer"
+require File.dirname(__FILE__) +  "/lib/lukup"
